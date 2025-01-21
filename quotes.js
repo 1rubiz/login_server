@@ -72,4 +72,4 @@ const quotes = [
   // Add more as needed...
 ];
 
-export default quotes;
+module.exports = quotes;
