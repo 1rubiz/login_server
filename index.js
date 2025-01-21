@@ -14,8 +14,8 @@ app.use(cors()); // Enable CORS for all routes
 app.use(express.json()); // To parse incoming JSON
 
 const getRandomInspiration = () => {
-  const randomIndex = Math.floor(Math.random() * quotes.default.length);
-  return (quotes.default[randomIndex]);
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+  return (quotes[randomIndex]);
 };
 
 const PORT = process.env.PORT || 5000;
